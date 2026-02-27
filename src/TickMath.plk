@@ -1,0 +1,3 @@
+// tickmath
+
+const MAX_TICK = 887272;

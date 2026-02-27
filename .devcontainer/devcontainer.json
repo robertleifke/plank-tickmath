@@ -1,5 +1,5 @@
 {
-  "name": "Foundry Template",
+  "name": "TickMath in Plank",
   "build": {
     "dockerfile": "Dockerfile"
   },

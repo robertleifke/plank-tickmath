@@ -1,38 +1,27 @@
 {
   "name": "@robertleifke/plank-tickmath",
-  "description": "Constant product market maker written with plank",
+  "description": "Example math library for tick conversions written in Plank",
   "private": true,
   "version": "1.0.0",
   "author": {
-    "name": "robertleifke",
-    "url": "https://github.com/robertleifke"
+    "name": "Paul Razvan Berg",
+    "url": "https://github.com/PaulRBerg"
   },
   "dependencies": {
     "@openzeppelin/contracts": "5.3.0"
   },
   "devDependencies": {
-    "forge-std": "github:foundry-rs/forge-std#v1.9.7",
     "prettier": "^3.5",
-    "solhint": "^5.1"
   },
   "keywords": [
-    "blockchain",
-    "ethereum",
-    "forge",
-    "foundry",
+    "evm",
     "smart-contracts",
-    "solidity",
-    "template"
+    "plank"
   ],
   "scripts": {
     "clean": "rm -rf cache out",
-    "build": "forge build",
-    "forge-check": "forge fmt --check",
-    "forge-write": "forge fmt",
     "lint": "bun run lint:sol && bun run prettier:check",
-    "lint:sol": "bun run forge-check && bun solhint \"{script,src,tests}/**/*.sol\"",
     "prettier:check": "prettier --check \"**/*.{json,md,yml}\"",
     "prettier:write": "prettier --write \"**/*.{json,md,yml}\"",
-    "test": "forge test"
   }
 }
